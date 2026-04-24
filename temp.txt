@@ -1,0 +1,33 @@
+Private Sub xDate_End_GotFocus()
+mygotFocus xDate_End
+End Sub
+Private Sub xDate_End_LostFocus()
+myLostFocus xDate_End
+myvalidDate xDate_End
+End Sub
+Private Sub xPeriod_GotFocus()
+mygotFocus xPeriod
+End Sub
+Private Sub xPeriod_LostFocus()
+myLostFocus xPeriod
+End Sub
+Private Sub xDate_GotFocus()
+mygotFocus xDate
+End Sub
+Private Sub xDate_LostFocus()
+myLostFocus xDate
+myvalidDate xDate
+End Sub
+Private Sub xMeeting_GotFocus()
+mygotFocus xMeeting
+End Sub
+Private Sub xMeeting_LostFocus()
+myLostFocus xMeeting
+End Sub
+Private Sub xDate_Send_GotFocus()
+mygotFocus xDate_Send
+End Sub
+Private Sub xDate_Send_LostFocus()
+myLostFocus xDate_Send
+myvalidDate xDate_Send
+End Sub

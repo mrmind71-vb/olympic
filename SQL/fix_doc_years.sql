@@ -1,0 +1,4 @@
+UPDATE FILE6_20H SET 
+FILE6_20H.[YEARS] = dbo.fn_get_years_count(FILE6_20H.DOC_NO),
+FILE6_20H.[YEARS_DESCA] = dbo.f_get_years(FILE6_20H.DOC_NO)
+FROM FILE6_20H 

@@ -1,0 +1,2 @@
+ALTER=yes
+ALTERTEST=yes

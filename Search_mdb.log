@@ -1,0 +1,5 @@
+Line 32: Class VSFlex7Ctl.VSFlexGrid of control grid1 was not a loaded control class.
+Line 200: Class Threed.SSCommand of control cmdFilter was not a loaded control class.
+Line 262: Class MSAdodcLib.Adodc of control Ado1 was not a loaded control class.
+Line 309: Class MSAdodcLib.Adodc of control data2 was not a loaded control class.
+Line 395: Class MSDataListLib.DataCombo of control cmbLookup was not a loaded control class.

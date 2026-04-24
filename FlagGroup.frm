@@ -1,0 +1,617 @@
+VERSION 5.00
+Object = "{D76D7128-4A96-11D3-BD95-D296DC2DD072}#1.0#0"; "Vsflex7.ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
+Begin VB.Form flagGroupFrm 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "«·„Ã„Ê⁄« "
+   ClientHeight    =   5895
+   ClientLeft      =   45
+   ClientTop       =   435
+   ClientWidth     =   7710
+   LinkTopic       =   "Form2"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   RightToLeft     =   -1  'True
+   ScaleHeight     =   5895
+   ScaleWidth      =   7710
+   Begin VB.CommandButton CmdExit 
+      CausesValidation=   0   'False
+      Height          =   465
+      Left            =   45
+      MaskColor       =   &H00FFFFFF&
+      Picture         =   "FlagGroup.frx":0000
+      RightToLeft     =   -1  'True
+      Style           =   1  'Graphical
+      TabIndex        =   7
+      TabStop         =   0   'False
+      ToolTipText     =   "Œ—ÊÃ"
+      Top             =   4860
+      UseMaskColor    =   -1  'True
+      Width           =   1455
+   End
+   Begin MSAdodcLib.Adodc data1 
+      Height          =   330
+      Left            =   0
+      Top             =   0
+      Visible         =   0   'False
+      Width           =   2340
+      _ExtentX        =   4128
+      _ExtentY        =   582
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "Adodc1"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   178
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin MSAdodcLib.Adodc DATA2 
+      Height          =   330
+      Left            =   0
+      Top             =   0
+      Visible         =   0   'False
+      Width           =   2340
+      _ExtentX        =   4128
+      _ExtentY        =   582
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "Adodc1"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   178
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin MSAdodcLib.Adodc DATA3 
+      Height          =   330
+      Left            =   0
+      Top             =   0
+      Visible         =   0   'False
+      Width           =   2340
+      _ExtentX        =   4128
+      _ExtentY        =   582
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "Adodc1"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   178
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin VSFlex7Ctl.VSFlexGrid grid1 
+      Height          =   4740
+      Left            =   45
+      TabIndex        =   0
+      Top             =   45
+      Width           =   7575
+      _cx             =   13361
+      _cy             =   8361
+      _ConvInfo       =   1
+      Appearance      =   0
+      BorderStyle     =   1
+      Enabled         =   -1  'True
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Arabic Transparent"
+         Size            =   11.25
+         Charset         =   178
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      MousePointer    =   0
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      BackColorFixed  =   14737632
+      ForeColorFixed  =   0
+      BackColorSel    =   -2147483635
+      ForeColorSel    =   -2147483634
+      BackColorBkg    =   -2147483636
+      BackColorAlternate=   -2147483643
+      GridColor       =   12632256
+      GridColorFixed  =   -2147483632
+      TreeColor       =   -2147483632
+      FloodColor      =   192
+      SheetBorder     =   -2147483642
+      FocusRect       =   1
+      HighLight       =   1
+      AllowSelection  =   -1  'True
+      AllowBigSelection=   -1  'True
+      AllowUserResizing=   0
+      SelectionMode   =   0
+      GridLines       =   1
+      GridLinesFixed  =   1
+      GridLineWidth   =   1
+      Rows            =   50
+      Cols            =   10
+      FixedRows       =   1
+      FixedCols       =   0
+      RowHeightMin    =   0
+      RowHeightMax    =   0
+      ColWidthMin     =   0
+      ColWidthMax     =   0
+      ExtendLastCol   =   0   'False
+      FormatString    =   ""
+      ScrollTrack     =   0   'False
+      ScrollBars      =   3
+      ScrollTips      =   0   'False
+      MergeCells      =   0
+      MergeCompare    =   0
+      AutoResize      =   0   'False
+      AutoSizeMode    =   0
+      AutoSearch      =   0
+      AutoSearchDelay =   2
+      MultiTotals     =   -1  'True
+      SubtotalPosition=   1
+      OutlineBar      =   0
+      OutlineCol      =   0
+      Ellipsis        =   0
+      ExplorerBar     =   0
+      PicturesOver    =   0   'False
+      FillStyle       =   0
+      RightToLeft     =   -1  'True
+      PictureType     =   0
+      TabBehavior     =   1
+      OwnerDraw       =   0
+      Editable        =   0
+      ShowComboButton =   -1  'True
+      WordWrap        =   0   'False
+      TextStyle       =   0
+      TextStyleFixed  =   0
+      OleDragMode     =   0
+      OleDropMode     =   0
+      DataMode        =   0
+      VirtualData     =   -1  'True
+      DataMember      =   ""
+      ComboSearch     =   3
+      AutoSizeMouse   =   0   'False
+      FrozenRows      =   0
+      FrozenCols      =   0
+      AllowUserFreezing=   0
+      BackColorFrozen =   0
+      ForeColorFrozen =   0
+      WallPaperAlignment=   9
+   End
+   Begin VB.Frame Frame1 
+      Height          =   1005
+      Left            =   1530
+      TabIndex        =   3
+      Top             =   4770
+      Width           =   6090
+      Begin VB.CommandButton cmdGroup 
+         Caption         =   "..."
+         BeginProperty Font 
+            Name            =   "Arabic Transparent"
+            Size            =   8.25
+            Charset         =   178
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   345
+         Left            =   90
+         RightToLeft     =   -1  'True
+         TabIndex        =   6
+         Top             =   180
+         Width           =   330
+      End
+      Begin VB.TextBox xDesca 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BeginProperty Font 
+            Name            =   "Arabic Transparent"
+            Size            =   11.25
+            Charset         =   178
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   330
+         Left            =   90
+         RightToLeft     =   -1  'True
+         TabIndex        =   2
+         Top             =   585
+         Width           =   4110
+      End
+      Begin MSDataListLib.DataCombo xGroup 
+         Height          =   345
+         Left            =   450
+         TabIndex        =   1
+         Top             =   180
+         Width           =   3750
+         _ExtentX        =   6615
+         _ExtentY        =   635
+         _Version        =   393216
+         Appearance      =   0
+         Text            =   ""
+         RightToLeft     =   -1  'True
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arabic Transparent"
+            Size            =   9.75
+            Charset         =   178
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin VB.Label Label1 
+         Caption         =   "«·„Ã„Ê⁄… «·—∆Ì”Ì… :"
+         BeginProperty Font 
+            Name            =   "Arabic Transparent"
+            Size            =   11.25
+            Charset         =   178
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   270
+         Left            =   4275
+         RightToLeft     =   -1  'True
+         TabIndex        =   5
+         Top             =   225
+         Width           =   1770
+      End
+      Begin VB.Label label2 
+         Caption         =   "≈”„ :"
+         BeginProperty Font 
+            Name            =   "Arabic Transparent"
+            Size            =   11.25
+            Charset         =   178
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   270
+         Left            =   4275
+         RightToLeft     =   -1  'True
+         TabIndex        =   4
+         Top             =   540
+         Width           =   1710
+      End
+   End
+End
+Attribute VB_Name = "FlagGroupFrm"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Public bedit As Boolean
+Dim con As New ADODB.Connection
+Dim clist1 As String
+Public sCaption As String, sCode As String, sDesca As String, sGroupDesca As String, sTable As String, sTableGroup As String, sGroupCaption As String, nZero, nZeroGroup
+Private Sub myload()
+Me.Caption = cCaption
+Label1.Caption = sGroupDesca & turn(sGroupDesca, " :")
+label2.Caption = sDesca & turn(sDesca, " :")
+
+cString = "SELECT CODE as [" & sCode & "], DESCA as [" & sDesca & "],[GROUP] as [" & sGroupDesca & "]" & _
+          " FROM " & sTable
+
+If IsNumeric(xGroup.BoundText) Then
+    cString = cString & turn(cString) & " [GROUP] = " & IIf(IsNumeric(xGroup.BoundText), xGroup.BoundText, MyParn(xGroup.BoundText))
+End If
+
+If Trim(xDesca.Text) <> "" Then
+    cString = cString & turn(cString) & MyParnAnd(xDesca.Text, "desca")
+End If
+
+cString = cString & " order by CODE"
+data1.RecordSource = cString
+data1.Refresh
+myAddItem
+If xGroup.BoundText <> "" Then grid1.TextMatrix(grid1.Rows - 1, 2) = xGroup.BoundText
+Fixgrd
+End Sub
+Private Sub Command2_Click()
+Unload Me
+End Sub
+
+Private Sub cmdExit_Click()
+Unload Me
+End Sub
+Private Sub cmdGroup_Click()
+Dim nCode As String
+nCode = xGroup.BoundText
+Dim oFlagfrm As New flag_mainfrm
+oFlagfrm.sCaption = sGroupCaption
+oFlagfrm.sFieldCode = "[CODE]"
+oFlagfrm.sFieldDesca = "[DESCA]"
+oFlagfrm.sTable = sTableGroup
+oFlagfrm.sFieldName1 = "«·ﬂÊœ"
+oFlagfrm.sFieldName2 = sGroupDesca
+oFlagfrm.nZero = nZeroGroup
+oFlagfrm.bedit = True
+oFlagfrm.Show 1
+DATA2.Refresh
+xGroup.BoundText = nCode
+If Not xGroup.MatchedWithList Then xGroup.BoundText = ""
+clist1 = StrList("Select code,desca from " & sTableGroup & " order by desca")
+Fixgrd
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+On Error Resume Next
+closeCon con
+Set FlagGroupFrm = Nothing
+End Sub
+Private Sub Grid1_AfterEdit(ByVal Row As Long, ByVal Col As Long)
+With grid1
+If Not validRow(Row) Then Exit Sub
+If Row = .Rows - 1 Then
+   myAddItem
+End If
+
+Dim aInsert As Variant
+aInsert = AddFlag(Empty, "DESCA", addstring(.TextMatrix(Row, 1)))
+aInsert = AddFlag(aInsert, "[GROUP]", addstring(.TextMatrix(Row, 2)))
+
+On Error GoTo myerror
+con.BeginTrans
+If Not IsNumeric(.TextMatrix(Row, 0)) Then
+    .TextMatrix(Row, 0) = IIf(nZero = -1, Newflag(sTable, "CODE"), RetZero(Newflag(sTable, "CODE"), nZero))
+    aInsert = AddFlag(aInsert, "[CODE]", IIf(nZero = -1, .TextMatrix(Row, 0), addstring(.TextMatrix(Row, 0))))
+    con.Execute addInsert(aInsert, sTable)
+Else
+    con.Execute addUpdate(aInsert, sTable, "code = " & IIf(nZero = -1, .TextMatrix(Row, 0), MyParn(.TextMatrix(Row, 0))))
+End If
+con.CommitTrans
+End With
+Exit Sub
+myerror:
+MsgBox Err.Description
+con.RollbackTrans
+Err.Clear
+myload
+End Sub
+Private Sub Grid1_EnterCell()
+If (grid1.Col = 0) Then
+    grid1.Editable = flexEDNone
+Else
+    grid1.Editable = flexEDKbdMouse
+    
+End If
+End Sub
+Private Sub Grid1_KeyDown(KeyCode As Integer, Shift As Integer)
+On Error GoTo myerror
+If KeyCode = 46 Then
+    If Trim(grid1.TextMatrix(grid1.Row, 0)) <> "" Then
+        If MsgBox("Õ–›?? Â· √‰  „Ê«›ﬁ", vbOKCancel + vbDefaultButton2 + vbCritical, "Õ–›") = vbOK Then
+            If IsNumeric(grid1.TextMatrix(grid1.Row, 0)) Then
+                con.BeginTrans
+                con.Execute "Delete From " & sTable & " where code =  " & grid1.TextMatrix(grid1.Row, 0)
+                con.CommitTrans
+            End If
+            grid1.RemoveItem grid1.Row
+        End If
+    End If
+End If
+Exit Sub
+myerror:
+MsgBox Err.Description
+Err.Clear
+con.RollbackTrans
+myload
+End Sub
+Private Sub Form_Load()
+openCon con
+DATA2.ConnectionString = strCon
+DATA2.RecordSource = sTableGroup
+
+Set xGroup.RowSource = DATA2
+xGroup.ListField = "Desca"
+xGroup.BoundColumn = "Code"
+
+Set grid1.DataSource = data1
+data1.ConnectionString = strCon
+With grid1
+clist1 = StrList("Select code,desca from " & sTableGroup & " order by desca")
+myload
+CellPos 13, grid1.Rows - 2, grid1.Cols - 1
+End With
+End Sub
+Private Sub Grid1_KeyPressEdit(ByVal Row As Long, ByVal Col As Long, KeyAscii As Integer)
+If KeyAscii = 46 And grid1.ColComboList(Col) <> "" Then
+    grid1.TextMatrix(Row, Col) = ""
+    grid1.EditText = ""
+End If
+End Sub
+
+Private Sub xcountry_code_KeyPress(KeyAscii As Integer)
+If KeyAscii = 13 Then myload
+End Sub
+Private Sub grid1_ValidateEdit(ByVal Row As Long, ByVal Col As Long, Cancel As Boolean)
+If Col = 1 Then
+    If Trim(grid1.EditText) = "" Then
+        MsgBox sDesca & " „ÿ·Ê»"
+        Cancel = True
+    Else
+        Dim aret As Variant
+        aret = GetField("Select code from " & sTable & " where desca = " & MyParn(grid1.EditText) & " and code <> " & MyParn(grid1.TextMatrix(Row, 0)))
+        If Not IsEmpty(aret) Then
+            MsgBox "«·»Ì«‰ „ÊÃÊœ „‰ ﬁ»· ›Ï «·ﬂÊœ " & aret
+            Cancel = True
+        End If
+    End If
+ElseIf Col = 2 Then
+     If Trim(grid1.EditText) = "" Then grid1.EditSelText = ""
+End If
+End Sub
+Private Sub Fixgrd()
+With grid1
+.ColComboList(2) = clist1
+.ColWidth(0) = 700
+.ColWidth(1) = 3500
+.ColWidth(2) = 3000
+For i = 1 To grid1.Cols - 1
+    .ColAlignment(i) = flexAlignRightCenter
+Next
+.Cell(flexcpBackColor, 1, 0, .Rows - 1, 0) = &H8000000F
+End With
+End Sub
+Private Function StrList(cString)
+Dim listTable As New ADODB.Recordset
+listTable.Open cString, con, adOpenStatic, adLockReadOnly, adCmdText
+Do Until listTable.EOF
+    StrList = StrList & "|#" & listTable.Fields(0) & ";" & listTable.Fields(1)
+    listTable.MoveNext
+Loop
+End Function
+Private Sub xDesca_Change()
+myload
+End Sub
+Private Sub xGroup_Click(Area As Integer)
+If Area = 2 Then myload
+End Sub
+Private Sub xgroup_Validate(Cancel As Boolean)
+myload
+End Sub
+Private Function validRow(nRow) As Boolean
+With grid1
+If Trim(.TextMatrix(nRow, 1)) = "" Then Exit Function
+End With
+validRow = True
+End Function
+Private Sub grid1_AfterRowColChange(ByVal OldRow As Long, ByVal OldCol As Long, ByVal NewRow As Long, ByVal NewCol As Long)
+With grid1
+If OldRow <> NewRow And OldRow <> .Rows - 1 And OldRow <> 0 And grid1.TextMatrix(OldRow, 0) = "" Then
+    If Not validRow(OldRow) Then
+        .RemoveItem OldRow
+    End If
+End If
+End With
+End Sub
+Private Sub Grid1_Validate(Cancel As Boolean)
+With grid1
+If Not validRow(.Row) And .Row <> .Rows - 1 And .Row <> 0 And grid1.TextMatrix(OldRow, 0) = "" Then
+    .RemoveItem .Row
+End If
+End With
+End Sub
+Private Sub myAddItem()
+With grid1
+    .AddItem ""
+    If .Rows > 2 Then
+        grid1.TextMatrix(.Rows - 1, 2) = grid1.TextMatrix(.Rows - 2, 2)
+    End If
+    If xGroup.MatchedWithList And grid1.TextMatrix(.Rows - 1, 2) = "" Then
+        grid1.TextMatrix(.Rows - 1, 2) = xGroup.BoundText
+    End If
+    grid1.Cell(flexcpBackColor, 1, 0, grid1.Rows - 1, 0) = &H8000000F
+End With
+End Sub
+Private Sub CellPos(ByRef KeyCode, ByVal Row As Long, ByVal Col As Long)
+KeyCode = 0
+If Col < grid1.Cols - 1 And NextEmpty(grid1, Row, Col + 1) <= grid1.Cols - 1 Then
+    grid1.Select Row, Col + 1
+ElseIf Row < grid1.Rows - 1 Then
+    grid1.Select Row + 1, 1
+    grid1.ShowCell Row + 1, 1
+End If
+End Sub
+Private Sub grid1_KeyUp(KeyCode As Integer, Shift As Integer)
+If KeyCode = 13 Then
+    CellPos KeyCode, grid1.Row, grid1.Col
+End If
+End Sub
+Private Sub grid1_KeyUpEdit(ByVal Row As Long, ByVal Col As Long, KeyCode As Integer, ByVal Shift As Integer)
+If KeyCode = 13 And Col <> 2 Then CellPos KeyCode, Row, Col
+End Sub
+
